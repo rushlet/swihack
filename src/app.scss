@@ -1,23 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+
 // colours
 $color1: #006080;
+$color2: #d7d7d7;
 $color3: #df6b00;
+$hover: #febe00;
 $primary: #202020;
 $background: #fff;
 
 $breakpoint: 48em;
 $max-text-width: 620px;
 
-@font-face {
-    font-family: geosans;
-    src: url(./assets/font/PublicSans-Roman-VF.ttf);
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'geosans', verdana, sans-serif;
+    font-family: 'Noto Sans', verdana, sans-serif;
     font-size: 18px;
     font-weight: 400;
     color: $primary;
@@ -47,7 +46,7 @@ h2 {
 p {
     max-width: $max-text-width;
     margin: auto;
-    text-align: left;
+    text-align: center;
 }
 
 a {
@@ -71,4 +70,5 @@ footer {
 }
 
 @import './components/intro/intro.scss';
+@import './components/form/form.scss';
 

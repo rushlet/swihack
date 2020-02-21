@@ -1,0 +1,40 @@
+<form id="form_unit-converter">
+    <div class="input-container__type">
+        <h3>Select a measurement type:</h3>
+
+        <input type="radio" name="type-choice" id="input_type_volume" value="volume">
+        <label for="input_type_volume">Volume</label>
+
+        <input type="radio" name="type-choice" id="input_type_area" value="area">
+        <label for="input_type_area">Area</label>
+
+        <input type="radio" name="type-choice" id="input_type_length" value="length">
+        <label for="input_type_length">Length</label>
+    </div>
+
+    <div class="input-container__unit">
+        <label for="select-choice">Select Dropdown Choice:</label>
+        <select name="select-choice" id="select-choice">
+            <option disabled selected value>Select an option</option>
+            <option value="Choice 1" class="unit-choice unit-volume">volume choice 1</option>
+            <option value="Choice 2" class="unit-choice unit-volume">volume choice 2</option>
+            <option value="Choice 3" class="unit-choice unit-volume">volume choice 3</option>
+            <option value="Choice 1" class="unit-choice unit-area">area choice 1</option>
+            <option value="Choice 2" class="unit-choice unit-area">area choice 2</option>
+            <option value="Choice 3" class="unit-choice unit-area">area choice 3</option>
+            <option value="Choice 1" class="unit-choice unit-length">length choice 1</option>
+            <option value="Choice 2" class="unit-choice unit-length">length choice 2</option>
+            <option value="Choice 3" class="unit-choice unit-length">length choice 3</option>
+        </select>
+    </div>
+
+    <div class="input-container__value">
+        <label for="name">Value:</label>
+        <input type="number" name="input_value" id="input_value" value="1">
+    </div>
+
+    <div class="input-container__submit">
+        <input type="submit" value="Go!">
+    </div>
+
+</form>

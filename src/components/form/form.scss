@@ -1,0 +1,78 @@
+form {
+    border: 2px solid $color2;
+    max-width: $max-text-width;
+    display: block;
+    margin: 5rem auto;
+    padding-top: 2rem;
+}
+
+.input-container__unit,
+.input-container__value,
+.input-container__submit {
+    // display: none;
+    margin: 3rem auto;
+}
+
+.input-container__type {
+    input[type="radio"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    label {
+        display: inline-block;
+        background-color: #ddd;
+        padding: 0.85rem 1.5rem;
+        font-size: 1rem;
+        border: 2px solid $color2;
+        border-radius: 0.25rem;
+    }
+
+    input[type="radio"]:checked+label {
+        background-color: $hover;
+        border-color: #febe00;
+    }
+
+    input[type="radio"]:focus+label {
+        border: 2px dashed $color2;
+    }
+
+    label:hover {
+        background-color: $hover;
+        cursor: pointer;
+    }
+}
+
+#select-choice,
+#input_value {
+    display: block;
+    height: 2rem;
+    margin: 0.5rem auto;
+    font-size: 1rem;
+    width: calc(#{$max-text-width} / 2);
+    text-align: center;
+    padding: 0.25rem;
+}
+
+#input_value {
+    width: 4rem;
+}
+
+select {
+    cursor: pointer;
+}
+
+.input-container__submit input {
+    display: inline-block;
+    background-color: #ddd;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+    border: 2px solid $color2;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $hover;
+    }
+}

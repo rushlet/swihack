@@ -1,0 +1,12 @@
+{
+    "volume": {
+        "example_thing_eg_sake": {
+            "unit": ["ml", "l"],
+            "icon": "url",
+            "text": {
+                "japanese": "thing",
+                "english": "a bottle of sake"
+            }
+        }
+    }
+}
