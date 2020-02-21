@@ -3,13 +3,13 @@ form {
     max-width: $max-text-width;
     display: block;
     margin: 5rem auto;
-    padding-top: 2rem;
+    padding: 2rem 0;
 }
 
 .input-container__unit,
 .input-container__value,
 .input-container__submit {
-    // display: none;
+    display: none;
     margin: 3rem auto;
 }
 
@@ -27,6 +27,7 @@ form {
         font-size: 1rem;
         border: 2px solid $color2;
         border-radius: 0.25rem;
+        text-transform: capitalize;
     }
 
     input[type="radio"]:checked+label {

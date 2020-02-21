@@ -9,6 +9,7 @@ export default class Form {
         this.inputValueContainer = document.querySelector('.input-container__value');
         this.inputValueEl = document.querySelector('.input-container__value input');
         this.choices = document.querySelectorAll('#select-choice .unit-choice');
+        this.formSubmit = this.form.querySelector('input[type="submit"]')
         this.onFormSubmit();
         this.setUpEventListeners();
     }
@@ -54,6 +55,7 @@ export default class Form {
 
     showValue(evt) {
         this.inputValueContainer.style.display = 'block';
+        document.querySelector('.input-container__submit').style.display = 'block';
         this.selectedUnit = evt.target.value;
     }
 }
