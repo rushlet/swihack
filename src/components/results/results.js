@@ -74,7 +74,7 @@ export default class Results {
     calculateExampleByInput(opts, sizeOfExample) {
         const { unit, type, value } = opts;
         let currentUnit = sizeOfExample.match(/[a-zA-Z]+/g)[0];
-        if (currentUnit === 'km' || currentUnit === 'm') currentUnit += "^2";
+        if ((opts.type === "area" && currentUnit === 'km') || (opts.type === "area" && currentUnit === 'm')) currentUnit += "^2";
         const number = sizeOfExample.match(/\d+/g)[0];
         const conversion = this.convertToOneOfUnit(number, currentUnit, unit, type);
         return (value / parseFloat(conversion)).toFixed(3);
