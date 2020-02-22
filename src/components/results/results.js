@@ -61,7 +61,7 @@ export default class Results {
             console.log('dataForLang[ids[i]]', dataForLang[ids[i]]);
             return `${previous}
                 <div class="example-container">
-                    <img src="${dataForLang[ids[i]].icon}" alt="${dataForLang[ids[i]].text}">
+                    <img src="./assets/img/${dataForLang[ids[i]].icon}" alt="${dataForLang[ids[i]].text}">
                     <span class="calculation">${this.calculateExampleByInput()}</span>
                     <span class="units">1 ${dataForLang[ids[i]].text} = ${dataForLang[ids[i]].size}</span>
                     <span class="description">${dataForLang[ids[i]].text}</span>
