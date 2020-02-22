@@ -10,16 +10,54 @@
 
     <body>
         <div id="wrapper" role="main">
-        	<h1>SwiHack Unit Converter</h1>
+        	<h1>Made to Measure</h1>
+        	<h2>SwiHack Unit Converter</h2>
         	<section id="intro" class="intro">
         	    <div class="container">
-        	        <h2 class="introText">What is the unit converter?</h2>
+        	        <h3 class="introText">What is the unit converter?</h3>
         	        <p>some stuff here about unit converter</p>
         	    </div>
-        	</section></div>
-        
-        <footer>
-        	<a parent="_top" href="http://www.rushlet.co.uk">Built by Rushlet</a>
-        </footer>
-    <script type="text/javascript" src="bundle.js"></script></body>
+        	</section>	<form id="form_unit-converter">
+        	    <div class="input-container__type">
+        	        <h3>Select a measurement type:</h3>
+        	            <input type="radio" name="type-choice" id="input_type_area" value="area">
+        	            <label for="input_type_area">area</label>
+        	            <input type="radio" name="type-choice" id="input_type_height" value="height">
+        	            <label for="input_type_height">height</label>
+        	            <input type="radio" name="type-choice" id="input_type_volume" value="volume">
+        	            <label for="input_type_volume">volume</label>
+        	            <input type="radio" name="type-choice" id="input_type_weight" value="weight">
+        	            <label for="input_type_weight">weight</label>
+        	    </div>
+        	
+        	    <div class="input-container__unit">
+        	        <label for="select-choice">Select Dropdown Choice:</label>
+        	        <select name="select-choice" id="select-choice">
+        	            <option disabled selected value>Select an option</option>
+        	                    <option value="m^2" class="unit-choice unit-area">m^2</option>
+        	                    <option value="km^2" class="unit-choice unit-area">km^2</option>
+        	                    <option value="ha" class="unit-choice unit-area">ha</option>
+        	                    <option value="m" class="unit-choice unit-height">m</option>
+        	                    <option value="km" class="unit-choice unit-height">km</option>
+        	                    <option value="ml" class="unit-choice unit-volume">ml</option>
+        	                    <option value="cl" class="unit-choice unit-volume">cl</option>
+        	                    <option value="dl" class="unit-choice unit-volume">dl</option>
+        	                    <option value="l" class="unit-choice unit-volume">l</option>
+        	                    <option value="hl" class="unit-choice unit-volume">hl</option>
+        	                    <option value="g" class="unit-choice unit-weight">g</option>
+        	                    <option value="kg" class="unit-choice unit-weight">kg</option>
+        	                    <option value="t" class="unit-choice unit-weight">t</option>
+        	        </select>
+        	    </div>
+        	
+        	    <div class="input-container__value">
+        	        <label for="name">Value:</label>
+        	        <input type="number" name="input_value" id="input_value" value="1">
+        	    </div>
+        	
+        	    <div class="input-container__submit">
+        	        <input type="submit" value="Go!">
+        	    </div>
+        	
+        	</form>	<div class="results-container"></div></div>    <script type="text/javascript" src="bundle.js"></script></body>
 </html>
