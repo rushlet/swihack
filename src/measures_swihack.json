@@ -81,8 +81,8 @@
                 },
                 "Aconcagua": {
                     "unit": ["m", "km"],
-                    "size": "6962",
-                    "icon": "?",
+                    "size": "6962m",
+                    "icon": "mount-aconcagua.jpg",
                     "text": {
                         "spanish": "Aconcaguas"
                     }
@@ -174,24 +174,24 @@
                 },
                 "rice_bags": {
                     "unit": ["kg"],
-                    "size": "60",
-                    "icon": "?",
+                    "size": "60kg",
+                    "icon": "rice-package.jpg",
                     "text": {
                         "japanese": "俵"
                     }
                 },
                 "arrobas": {
                     "unit": ["kg"],
-                    "size": "15",
+                    "size": "15kg",
                     "icon": "arroba.jpg",
                     "text": {
                         "portuguese": "arrobas"
                     }
                 },
-                "blag_flour": {
+                "bag_flour": {
                     "unit": ["kg"],
                     "size": "50kg",
-                    "icon": "?",
+                    "icon": "sack-flour.jpg",
                     "text": {
                         "russian": "мешок муки"
                     }
@@ -199,7 +199,7 @@
                 "bag_wheat": {
                     "unit": ["kg"],
                     "size": "10kg",
-                    "icon": "?",
+                    "icon": "wheat-grain.jpeg",
                     "text": {
                         "arabic": "كيس من القمح"
                     }
