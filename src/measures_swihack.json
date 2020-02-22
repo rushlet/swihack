@@ -13,7 +13,8 @@
                         "english": "football pitches",
                         "arabic": "ملعب كرة قدم",
                         "chinese": "足球场",
-                        "russian": "футбольное поле"
+                        "russian": "футбольное поле",
+                        "description": "football pitches"
                     }
                 },
                 "hyde_park": {
@@ -21,7 +22,8 @@
                     "size": "142ha",
                     "icon": "?",
                     "text": {
-                        "english": "Hyde Park"
+                        "english": "Hyde Park",
+                        "description": "Hyde Park"
                     }
                 },
                 "central_park": {
@@ -29,7 +31,8 @@
                     "size": "3.41km^2",
                     "icon": "?",
                     "text": {
-                        "english": "Central Park"
+                        "english": "Central Park",
+                        "description": "Central Park"
                     }
                 },
                 "baseball_pitches": {
@@ -37,7 +40,8 @@
                     "size": "14864m^2",
                     "icon": "baseball_field.jpg",
                     "text": {
-                        "japanese": "東京ドーム"
+                        "japanese": "東京ドーム",
+                        "description": "baseball pitch"
                     }
                 },
                 "maracana": {
@@ -46,7 +50,8 @@
                     "icon": "maracana-stadium.jpg",
                     "text": {
                         "spanish": "estadios de Maracaná",
-                        "portuguese": "Maracanãs"
+                        "portuguese": "Maracanãs",
+                        "description": "Maracanã Stadium"
                     }
                 }
             }
@@ -59,7 +64,8 @@
                     "size": "4167m",
                     "icon": "mount-toubkal.jpg",
                     "text": {
-                        "arabic": "كقمة توبقال"
+                        "arabic": "كقمة توبقال",
+                        "description": "Mount Toubkal"
                     }
                 },
                 "Mount_Everest": {
@@ -68,7 +74,8 @@
                     "icon": "mount-everest.jpg",
                     "text": {
                         "english": "Mount Everest",
-                        "chinese": "珠穆朗玛峰"
+                        "chinese": "珠穆朗玛峰",
+                        "description": "Mount Everest"
                     }
                 },
                 "Oskantino_tower": {
@@ -76,7 +83,8 @@
                     "size": "540m",
                     "icon": "ostankino-tower.jpg",
                     "text": {
-                        "chinese": "珠穆朗玛峰"
+                        "chinese": "珠穆朗玛峰",
+                        "description": "Oskantino tower"
                     }
                 },
                 "Aconcagua": {
@@ -84,7 +92,8 @@
                     "size": "6962m",
                     "icon": "mount-aconcagua.jpg",
                     "text": {
-                        "spanish": "Aconcaguas"
+                        "spanish": "Aconcaguas",
+                        "description": "Mount Aconcagua"
                     }
                 },
                 "Mount_Fuji": {
@@ -92,7 +101,8 @@
                     "size": "3776m",
                     "icon": "mount-fuji.jpg",
                     "text": {
-                        "japanese": "富士山"
+                        "japanese": "富士山",
+                        "description": "Mount Fuji"
                     }
                 },
                 "christ_redeemer": {
@@ -100,7 +110,8 @@
                     "size": "38m",
                     "icon": "christ-redeemer.jpg",
                     "text": {
-                        "portuguese": "Cristo Redentor"
+                        "portuguese": "Cristo Redentor",
+                        "description": "Christ the Redeemer (statue)"
                     }
                 }
             }
@@ -113,7 +124,8 @@
                     "size": "148ml",
                     "icon": "glass-water.jpg",
                     "text": {
-                        "arabic": "كأس ما"
+                        "arabic": "كأس ما",
+                        "description": "glass of water"
                     }
                 },
                 "glass_wine": {
@@ -121,7 +133,8 @@
                     "size": "360ml",
                     "icon": "wine-glass.jpg",
                     "text": {
-                        "russian": "Один бокал вина"
+                        "russian": "Один бокал вина",
+                        "description": "glass of wine"
                     }
                 },
                 "watertank": {
@@ -129,7 +142,8 @@
                     "size": "100l",
                     "icon": "?",
                     "text": {
-                        "chinese": "大象"
+                        "chinese": "大象",
+                        "description": "watertank"
                     }
                 },
                 "tequila_shot": {
@@ -137,7 +151,8 @@
                     "size": "43ml",
                     "icon": "tequila-shot.jpg",
                     "text": {
-                        "spanish": "caballitos"
+                        "spanish": "caballitos",
+                        "description": "tequila shots"
                     }
                 },
                 "beer_bottle": {
@@ -145,7 +160,8 @@
                     "size": "600ml",
                     "icon": "caraf-beer.jpg",
                     "text": {
-                        "portuguese": "garrafa de cervejas"
+                        "portuguese": "garrafa de cervejas",
+                        "description": "beer bottle"
                     }
                 },
                 "sake_bottle": {
@@ -153,7 +169,8 @@
                     "size": "18dl",
                     "icon": "sake-bottle.jpg",
                     "text": {
-                        "japanese": "升"
+                        "japanese": "升",
+                        "description": "bottle of sake"
                     }
                 }
             }
@@ -169,7 +186,8 @@
                         "spanish": "elefante",
                         "english": "elephants",
                         "chinese": "大象",
-                        "russian": "слон"
+                        "russian": "слон",
+                        "description": "elephants"
                     }
                 },
                 "rice_bags": {
@@ -177,7 +195,8 @@
                     "size": "60kg",
                     "icon": "rice-package.jpg",
                     "text": {
-                        "japanese": "俵"
+                        "japanese": "俵",
+                        "description": "rice bags"
                     }
                 },
                 "arrobas": {
@@ -185,7 +204,8 @@
                     "size": "15kg",
                     "icon": "arroba.jpg",
                     "text": {
-                        "portuguese": "arrobas"
+                        "portuguese": "arrobas",
+                        "description": "Unit of weight used in Brazil acriculture"
                     }
                 },
                 "bag_flour": {
@@ -193,7 +213,8 @@
                     "size": "50kg",
                     "icon": "sack-flour.jpg",
                     "text": {
-                        "russian": "мешок муки"
+                        "russian": "мешок муки",
+                        "description": "sack of flour"
                     }
                 },
                 "bag_wheat": {
@@ -201,7 +222,8 @@
                     "size": "10kg",
                     "icon": "wheat-grain.jpeg",
                     "text": {
-                        "arabic": "كيس من القمح"
+                        "arabic": "كيس من القمح",
+                        "description": "bag of wheat"
                     }
                 },
                 "sugar_cube": {
@@ -209,7 +231,8 @@
                     "size": "4g",
                     "icon": "sugar-cube.jpg",
                     "text": {
-                        "chinese": "一块方糖"
+                        "chinese": "一块方糖",
+                        "description": "sugar cube"
                     }
                 },
                 "rice_bags_s": {
@@ -217,7 +240,8 @@
                     "size": "1kg",
                     "icon": "?",
                     "text": {
-                        "spanish": "paquetes de arroz"
+                        "spanish": "paquetes de arroz",
+                        "description": "bag of rice"
                     }
                 },
                 "bean_bags": {
@@ -225,7 +249,8 @@
                     "size": "1kg",
                     "icon": "black-beans.jpg",
                     "text": {
-                        "portuguese": "saco de feijão"
+                        "portuguese": "saco de feijão",
+                        "description": "bag of beans"
                     }
                 },
                 "yen_coin": {
@@ -233,7 +258,8 @@
                     "size": "1g",
                     "icon": "yen.jpg",
                     "text": {
-                        "japanese": "円玉"
+                        "japanese": "円玉",
+                        "description": "yen coin"
                     }
                 }
             }
