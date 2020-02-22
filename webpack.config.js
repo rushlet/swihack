@@ -69,9 +69,9 @@ module.exports = {
         ]),
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, 'index.hbs'),
-            title: 'Webpack project set up', // needs updating with each project!
-            templateParameters: require('./src/example_json_structure.json'),
-            data: require('./src/example_json_structure.json')
+            title: 'SwiHack Unit converter',
+            templateParameters: require('./src/measures_swihack.json'),
+            data: require('./src/measures_swihack.json')
         }),
         new MiniCssExtractPlugin({
             filename: '[name].css',

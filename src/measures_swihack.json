@@ -1,0 +1,242 @@
+{
+    "type": {
+        "area": {
+            "units": ["m^2", "km^2", "ha"],
+            "examples": {
+                "football_pitches": {
+                    "unit": ["m^2", "km^2", "ha"],
+                    "size": "10800m^2",
+                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/96/Football_pitch_metric_and_imperial.svg",
+                    "text": {
+                        "spanish": "canchas de fútbol",
+                        "portuguese": "campos de futebol",
+                        "english": "football pitches",
+                        "arabic": "ملعب كرة قدم",
+                        "chinese": "足球场",
+                        "russian": "футбольное поле"
+                    }
+                },
+                "hyde_park": {
+                    "unit": ["m^2", "km^2", "ha"],
+                    "size": "142ha",
+                    "icon": "?",
+                    "text": {
+                        "english": "Hyde Park"
+                    }
+                },
+                "central_park": {
+                    "unit": ["m^2", "km^2", "ha"],
+                    "size": "3.41km^2",
+                    "icon": "?",
+                    "text": {
+                        "english": "Central Park"
+                    }
+                },
+                "baseball_pitches": {
+                    "unit": ["m^2", "km^2", "ha"],
+                    "size": "14864m^2",
+                    "icon": "?",
+                    "text": {
+                        "japanese": "東京ドーム"
+                    }
+                },
+                "maracana": {
+                    "unit": ["m^2", "km^2", "ha"],
+                    "size": "10800m",
+                    "icon": "?",
+                    "text": {
+                        "spanish": "estadios de Maracaná",
+                        "portuguese": "Maracanãs"
+                    }
+                }
+            }
+        },
+        "height": {
+            "units": ["m", "km"],
+            "examples": {
+                "mount_Toubkal": {
+                    "unit": ["m", "km"],
+                    "size": "4167m",
+                    "icon": "?",
+                    "text": {
+                        "arabic": "كقمة توبقال"
+                    }
+                },
+                "Mount_Everest": {
+                    "unit": ["m", "km"],
+                    "size": "8848m",
+                    "icon": "?",
+                    "text": {
+                        "english": "Mount Everest",
+                        "chinese": "珠穆朗玛峰"
+                    }
+                },
+                "Oskantino_tower": {
+                    "unit": ["m", "km"],
+                    "size": "540m",
+                    "icon": "?",
+                    "text": {
+                        "chinese": "珠穆朗玛峰"
+                    }
+                },
+                "Aconcagua": {
+                    "unit": ["m", "km"],
+                    "size": "6962",
+                    "icon": "?",
+                    "text": {
+                        "spanish": "Aconcaguas"
+                    }
+                },
+                "Mount_Fuji": {
+                    "unit": ["m", "km"],
+                    "size": "3776m",
+                    "icon": "?",
+                    "text": {
+                        "japanese": "富士山"
+                    }
+                },
+                "christ_redeemer": {
+                    "unit": ["m"],
+                    "size": "38m",
+                    "icon": "?",
+                    "text": {
+                        "portuguese": "Cristo Redentor"
+                    }
+                }
+            }
+        },
+        "volume": {
+            "units": ["ml", "cl", "dl", "l", "hl"],
+            "examples": {
+                "glass_water": {
+                    "unit": ["ml", "cl", "dl"],
+                    "size": "147.87ml",
+                    "icon": "?",
+                    "text": {
+                        "arabic": "كأس ما"
+                    }
+                },
+                "glass_wine": {
+                    "unit": ["ml", "cl", "dl", "l"],
+                    "size": "360ml",
+                    "icon": "?",
+                    "text": {
+                        "russian": "Один бокал вина"
+                    }
+                },
+                "watertank": {
+                    "unit": ["l", "hl"],
+                    "size": "100l",
+                    "icon": "?",
+                    "text": {
+                        "chinese": "大象"
+                    }
+                },
+                "tequila_shot": {
+                    "unit": ["ml", "cl", "dl", "l"],
+                    "size": "43ml",
+                    "icon": "?",
+                    "text": {
+                        "spanish": "caballitos"
+                    }
+                },
+                "beer_bottle": {
+                    "unit": ["ml", "cl", "dl", "l"],
+                    "size": "600ml",
+                    "icon": "?",
+                    "text": {
+                        "portuguese": "garrafa de cervejas"
+                    }
+                },
+                "sake_bottle": {
+                    "unit": ["ml", "cl", "dl", "l"],
+                    "size": "1.8l",
+                    "icon": "?",
+                    "text": {
+                        "japanese": "升"
+                    }
+                }
+            }
+        },
+        "weight": {
+            "units": ["g", "kg", "t"],
+            "examples": {
+                "elephant": {
+                    "unit": ["kg", "t"],
+                    "size": "5400kg",
+                    "icon": "?",
+                    "text": {
+                        "spanish": "elefante",
+                        "english": "elephants",
+                        "chinese": "大象",
+                        "russian": "слон"
+                    }
+                },
+                "rice_bags": {
+                    "unit": ["kg"],
+                    "size": "60",
+                    "icon": "?",
+                    "text": {
+                        "japanese": "俵"
+                    }
+                },
+                "arrobas": {
+                    "unit": ["kg"],
+                    "size": "15",
+                    "icon": "?",
+                    "text": {
+                        "portuguese": "arrobas"
+                    }
+                },
+                "blag_flour": {
+                    "unit": ["kg"],
+                    "size": "50kg",
+                    "icon": "?",
+                    "text": {
+                        "russian": "мешок муки"
+                    }
+                },
+                "bag_wheat": {
+                    "unit": ["kg"],
+                    "size": "10kg",
+                    "icon": "?",
+                    "text": {
+                        "arabic": "كيس من القمح"
+                    }
+                },
+                "sugar_cube": {
+                    "unit": ["kg", "g"],
+                    "size": "4g",
+                    "icon": "?",
+                    "text": {
+                        "chinese": "一块方糖"
+                    }
+                },
+                "rice_bags_s": {
+                    "unit": ["kg"],
+                    "size": "1kg",
+                    "icon": "?",
+                    "text": {
+                        "spanish": "paquetes de arroz"
+                    }
+                },
+                "bean_bags": {
+                    "unit": ["kg"],
+                    "size": "1kg",
+                    "icon": "?",
+                    "text": {
+                        "portuguese": "saco de feijão"
+                    }
+                },
+                "yen_coin": {
+                    "unit": ["g"],
+                    "size": "1g",
+                    "icon": "?",
+                    "text": {
+                        "japanese": "円玉"
+                    }
+                }
+            }
+        }
+    }
+}
