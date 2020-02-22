@@ -6,7 +6,7 @@
                 "football_pitches": {
                     "unit": ["m^2", "km^2", "ha"],
                     "size": "10800m^2",
-                    "icon": "https://upload.wikimedia.org/wikipedia/commons/9/96/Football_pitch_metric_and_imperial.svg",
+                    "icon": "football-pitch.jpg",
                     "text": {
                         "spanish": "canchas de fútbol",
                         "portuguese": "campos de futebol",
@@ -35,7 +35,7 @@
                 "baseball_pitches": {
                     "unit": ["m^2", "km^2", "ha"],
                     "size": "14864m^2",
-                    "icon": "?",
+                    "icon": "baseball_field.jpg",
                     "text": {
                         "japanese": "東京ドーム"
                     }
@@ -43,7 +43,7 @@
                 "maracana": {
                     "unit": ["m^2", "km^2", "ha"],
                     "size": "10800m",
-                    "icon": "?",
+                    "icon": "maracana-stadium.jpg",
                     "text": {
                         "spanish": "estadios de Maracaná",
                         "portuguese": "Maracanãs"
@@ -57,7 +57,7 @@
                 "mount_Toubkal": {
                     "unit": ["m", "km"],
                     "size": "4167m",
-                    "icon": "?",
+                    "icon": "mount-toubkal.jpg",
                     "text": {
                         "arabic": "كقمة توبقال"
                     }
@@ -65,7 +65,7 @@
                 "Mount_Everest": {
                     "unit": ["m", "km"],
                     "size": "8848m",
-                    "icon": "?",
+                    "icon": "mount-everest.jpg",
                     "text": {
                         "english": "Mount Everest",
                         "chinese": "珠穆朗玛峰"
@@ -74,7 +74,7 @@
                 "Oskantino_tower": {
                     "unit": ["m", "km"],
                     "size": "540m",
-                    "icon": "?",
+                    "icon": "ostankino-tower.jpg",
                     "text": {
                         "chinese": "珠穆朗玛峰"
                     }
@@ -90,7 +90,7 @@
                 "Mount_Fuji": {
                     "unit": ["m", "km"],
                     "size": "3776m",
-                    "icon": "?",
+                    "icon": "mount-fuji.jpg",
                     "text": {
                         "japanese": "富士山"
                     }
@@ -98,7 +98,7 @@
                 "christ_redeemer": {
                     "unit": ["m"],
                     "size": "38m",
-                    "icon": "?",
+                    "icon": "christ-redeemer.jpg",
                     "text": {
                         "portuguese": "Cristo Redentor"
                     }
@@ -111,7 +111,7 @@
                 "glass_water": {
                     "unit": ["ml", "cl", "dl"],
                     "size": "147.87ml",
-                    "icon": "?",
+                    "icon": "glass-water.jpg",
                     "text": {
                         "arabic": "كأس ما"
                     }
@@ -119,7 +119,7 @@
                 "glass_wine": {
                     "unit": ["ml", "cl", "dl", "l"],
                     "size": "360ml",
-                    "icon": "?",
+                    "icon": "wine-glass.jpg",
                     "text": {
                         "russian": "Один бокал вина"
                     }
@@ -135,7 +135,7 @@
                 "tequila_shot": {
                     "unit": ["ml", "cl", "dl", "l"],
                     "size": "43ml",
-                    "icon": "?",
+                    "icon": "tequila-shot.jpg",
                     "text": {
                         "spanish": "caballitos"
                     }
@@ -143,7 +143,7 @@
                 "beer_bottle": {
                     "unit": ["ml", "cl", "dl", "l"],
                     "size": "600ml",
-                    "icon": "?",
+                    "icon": "caraf-beer.jpg",
                     "text": {
                         "portuguese": "garrafa de cervejas"
                     }
@@ -151,7 +151,7 @@
                 "sake_bottle": {
                     "unit": ["ml", "cl", "dl", "l"],
                     "size": "1.8l",
-                    "icon": "?",
+                    "icon": "sake-bottle.jpg",
                     "text": {
                         "japanese": "升"
                     }
@@ -164,7 +164,7 @@
                 "elephant": {
                     "unit": ["kg", "t"],
                     "size": "5400kg",
-                    "icon": "?",
+                    "icon": "elephant.jpg",
                     "text": {
                         "spanish": "elefante",
                         "english": "elephants",
@@ -183,7 +183,7 @@
                 "arrobas": {
                     "unit": ["kg"],
                     "size": "15",
-                    "icon": "?",
+                    "icon": "arroba.jpg",
                     "text": {
                         "portuguese": "arrobas"
                     }
@@ -207,7 +207,7 @@
                 "sugar_cube": {
                     "unit": ["kg", "g"],
                     "size": "4g",
-                    "icon": "?",
+                    "icon": "sugar-cube.jpg",
                     "text": {
                         "chinese": "一块方糖"
                     }
@@ -223,7 +223,7 @@
                 "bean_bags": {
                     "unit": ["kg"],
                     "size": "1kg",
-                    "icon": "?",
+                    "icon": "black-beans.jpg",
                     "text": {
                         "portuguese": "saco de feijão"
                     }
@@ -231,7 +231,7 @@
                 "yen_coin": {
                     "unit": ["g"],
                     "size": "1g",
-                    "icon": "?",
+                    "icon": "yen.jpg",
                     "text": {
                         "japanese": "円玉"
                     }
