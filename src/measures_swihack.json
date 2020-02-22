@@ -42,7 +42,7 @@
                 },
                 "maracana": {
                     "unit": ["m^2", "km^2", "ha"],
-                    "size": "10800m",
+                    "size": "10800m^2",
                     "icon": "maracana-stadium.jpg",
                     "text": {
                         "spanish": "estadios de Maracaná",
@@ -110,7 +110,7 @@
             "examples": {
                 "glass_water": {
                     "unit": ["ml", "cl", "dl"],
-                    "size": "147.87ml",
+                    "size": "148ml",
                     "icon": "glass-water.jpg",
                     "text": {
                         "arabic": "كأس ما"
@@ -150,7 +150,7 @@
                 },
                 "sake_bottle": {
                     "unit": ["ml", "cl", "dl", "l"],
-                    "size": "1.8l",
+                    "size": "18dl",
                     "icon": "sake-bottle.jpg",
                     "text": {
                         "japanese": "升"
