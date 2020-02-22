@@ -59,38 +59,34 @@ export default class Results {
         const dataForLang = this.formattedData[language];
         const ids = Object.keys(this.formattedData[language]);
         return ids.reduce((previous, current, i) => {
+            console.log('options.value', options.value);
+            console.log('converter', this.calculateExampleByInput(options, dataForLang[ids[i]].size));
             return `${previous}
                 <div class="example-container">
                     <img src="./assets/img/${dataForLang[ids[i]].icon}" alt="${dataForLang[ids[i]].text}">
-                    <span class="calculation">${this.calculateExampleByInput(options.unit, dataForLang[ids[i]].size, options.type)}</span>
-                    <span class="units">1 ${dataForLang[ids[i]].text} = ${dataForLang[ids[i]].size}</span>
+                    <span class="calculation">${this.calculateExampleByInput(options, dataForLang[ids[i]].size)}</span>
+                    <span class="units">1 ${dataForLang[ids[i]].text} = ${options.value / this.calculateExampleByInput(options, dataForLang[ids[i]].size)}${options.unit}</span>
                     <span class="description">${dataForLang[ids[i]].text}</span>
                 </div>`;
         }, '');
     }
 
-    calculateExampleByInput(unit, sizeOfExample, type) {
-        console.log('str', sizeOfExample);
+    calculateExampleByInput(opts, sizeOfExample) {
+        const { unit, type, value } = opts;
         let currentUnit = sizeOfExample.match(/[a-zA-Z]+/g)[0];
         if (currentUnit === 'km' || currentUnit === 'm') currentUnit += "^2";
-        console.log('currentUnit: ', currentUnit);
         const number = sizeOfExample.match(/\d+/g)[0];
-        console.log('user selected', unit, 'example measured in', currentUnit, `(${number})`);
         const conversion = this.convertToOneOfUnit(number, currentUnit, unit, type);
-        console.log('conversion', conversion);
-        return conversion;
+        return (value / parseFloat(conversion)).toFixed(3);
     }
 
     convertToOneOfUnit(number, currentUnit, unitToConvertTo, type) {
-        console.log(unitToConvertTo, currentUnit, currentUnit !== unitToConvertTo);
         if (currentUnit !== unitToConvertTo) {
             const smallestUnits = Object.keys(config[type]);
             let unitKey = '';
             smallestUnits.forEach((key) => {
                 if (Object.keys(config[type][key]).includes(unitToConvertTo)) unitKey = key;
             })
-            console.log('unitKey', unitKey, 'currentUnit', currentUnit, 'unitToConvertTo');
-            console.log('number', number, conversion, conversion);
             const conversion = config[type][unitKey][currentUnit] / config[type][unitKey][unitToConvertTo];
             return `${number * conversion}${unitToConvertTo}`;
         }
