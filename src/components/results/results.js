@@ -48,9 +48,9 @@ export default class Results {
 
     getMarkUpForLanguage(language) {
         const output = this.exampleMarkupForLang(language)
-        return `<div class="examples-container ${language}">
+        return `<div class="language-results ${language}">
                     <h3 class="examples_title lang-${language}">${this.capitalise(language)}</h3>
-                    ${output}
+                    <div class="examples-container">${output}</div>
                 </div>`;
     }
 
