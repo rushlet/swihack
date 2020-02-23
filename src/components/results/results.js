@@ -8,26 +8,19 @@ export default class Results {
 
     renderResults(options) {
         this.examplesIDs = this.getExamplesForSelection(options);
-        this.langs = this.getLanguagesForInput();
         this.formattedData = this.formatDataByLanguage();
+        this.langs = Object.keys(this.formattedData).sort();
         let output = '';
         this.langs.forEach((lang) => {
             output += this.getMarkUpForLanguage(lang, options);
         });
         this.resultContainer.innerHTML = `<h2>Results</h2><div class="lang-container">${output}</div>`;
     }
+
     getExamplesForSelection(options) {
         const selectedUnit = options.unit;
         this.examplesForType = data.type[options.type].examples;
         return Object.keys(this.examplesForType).filter(key => this.examplesForType[key].unit.includes(selectedUnit));
-    }
-
-    getLanguagesForInput() {
-        const allLangs = [];
-        this.examplesIDs.forEach((key) => {
-            allLangs.push(...Object.keys(this.examplesForType[key].text));
-        });
-        return [...new Set(allLangs)];
     }
 
     formatDataByLanguage() {
@@ -35,10 +28,11 @@ export default class Results {
         this.examplesIDs.forEach((id) => {
             const datum = this.examplesForType[id];
             Object.keys(datum.text).forEach((lang) => {
-                if (!formattedData[lang]) formattedData[lang] = {};
-                formattedData[lang][id] = {
+                const key = (lang === 'description') ? 'all' : lang;
+                if (!formattedData[key]) formattedData[key] = {};
+                formattedData[key][id] = {
                     text: datum.text[lang],
-                    desc: datum.desc || "placeholder for description",
+                    desc: datum.text['description'],
                     size: datum.size,
                     icon: datum.icon
                 }
@@ -48,7 +42,7 @@ export default class Results {
     }
 
     getMarkUpForLanguage(language, options) {
-        const output = this.exampleMarkupForLang(language, options)
+        const output = this.exampleMarkupForLang(language, options);
         return `<div class="language-results ${language}">
                     <h3 class="examples_title lang-${language}">${this.capitalise(language)}</h3>
                     <div class="examples-container">${output}</div>
@@ -57,18 +51,22 @@ export default class Results {
 
     exampleMarkupForLang(language, options) {
         const dataForLang = this.formattedData[language];
-        const ids = Object.keys(this.formattedData[language]);
+        const ids = Object.keys(dataForLang).sort();
         return ids.reduce((previous, current, i) => {
-            console.log('options.value', options.value);
-            console.log('converter', this.calculateExampleByInput(options, dataForLang[ids[i]].size));
+            const example = dataForLang[ids[i]];
             return `${previous}
                 <div class="example-container">
-                    <img src="./assets/img/${dataForLang[ids[i]].icon}" alt="${dataForLang[ids[i]].text}">
-                    <span class="calculation">${this.calculateExampleByInput(options, dataForLang[ids[i]].size)}</span>
-                    <span class="units">1 ${dataForLang[ids[i]].text} = ${options.value / this.calculateExampleByInput(options, dataForLang[ids[i]].size)}${options.unit}</span>
-                    <span class="description">${dataForLang[ids[i]].text}</span>
+                    <img src="./assets/img/${example.icon}" alt="${example.text}">
+                    <span class="calculation">${options.value}${options.unit} is equal to ${this.calculateExampleByInput(options, example.size)} ${example.desc}</span>
+                    <span class="units">1 ${example.desc} = ${(options.value / this.calculateExampleByInput(options, example.size)).toFixed(2)}${options.unit}</span>
+                    ${this.optionalDesc(language, example)}
                 </div>`;
         }, '');
+    }
+
+    optionalDesc(language, example) {
+        if (language === 'all') return '';
+        return `<span class="description">${language}: ${example.text}</span>`;
     }
 
     calculateExampleByInput(opts, sizeOfExample) {
