@@ -13,7 +13,8 @@ form {
     margin: 3rem auto;
 }
 
-.input-container__type {
+.input-container__type,
+.input-container__unit {
     input[type="radio"] {
         opacity: 0;
         width: 0;
@@ -27,7 +28,6 @@ form {
         font-size: 1rem;
         border: 2px solid $color2;
         border-radius: 0.25rem;
-        text-transform: capitalize;
         margin: 1rem 0.5rem;
     }
 
@@ -44,6 +44,10 @@ form {
         background-color: $hover;
         cursor: pointer;
     }
+}
+
+.input-container__type label {
+    text-transform: capitalize;
 }
 
 #select-choice,

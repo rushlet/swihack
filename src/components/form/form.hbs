@@ -8,15 +8,15 @@
     </div>
 
     <div class="input-container__unit">
-        <label for="select-choice">Select a unit:</label>
-        <select name="select-choice" id="select-choice">
-            <option disabled selected value>Select an option</option>
-            {{#each type as | typeName key|}}
-                {{#each this.units as | unit |}}
-                    <option value="{{unit}}" class="unit-choice unit-{{key}}">{{unit}}</option>
-                {{/each}}
+        <h3>Select a unit:</h3>
+        {{#each type as | typeName key|}}
+            {{#each this.units as | unit |}}
+                <div class="btn-container unit-choice unit-{{key}}">
+                    <input type="radio" name="unit-choice" id="input_unit_{{unit}}" value="{{unit}}">
+                    <label for="input_unit_{{unit}}">{{unit}}</label>
+                </div>
             {{/each}}
-        </select>
+        {{/each}}
     </div>
 
     <div class="input-container__value">

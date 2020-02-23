@@ -8,7 +8,7 @@ export default class Form {
         this.dropdown = this.unitContainer.querySelector('select');
         this.inputValueContainer = document.querySelector('.input-container__value');
         this.inputValueEl = document.querySelector('.input-container__value input');
-        this.choices = document.querySelectorAll('#select-choice .unit-choice');
+        this.choices = document.querySelectorAll('.input-container__unit .btn-container');
         this.formSubmit = this.form.querySelector('input[type="submit"]')
         this.onFormSubmit();
         this.setUpEventListeners();
@@ -30,8 +30,9 @@ export default class Form {
         this.typeRadioBtns.forEach((el) => {
             el.addEventListener('change', (evt) => this.updateUnitOptions(evt));
         });
-        this.dropdown.addEventListener('change', (evt) => {
-            this.showValue(evt);
+        this.unitRadioBtns = document.querySelectorAll('.input-container__unit input[type="radio"]');
+        this.unitRadioBtns.forEach((el) => {
+            el.addEventListener('change', (evt) => this.showValue(evt));
         });
     }
 
@@ -42,15 +43,12 @@ export default class Form {
         this.selectedType = evt.target.value;
         
         this.unitContainer.style.display = 'block';
-        this.choices.forEach((option) => {
-            option.style.display = 'none';
+        this.choices.forEach((btn) => {
+            btn.style.display = 'none';
         });
         document.querySelectorAll(`.unit-${this.selectedType}`).forEach((opt) => {
-            opt.style.display = 'block';
+            opt.style.display = 'inline-block';
         });
-        console.log('dropdown: ', this.dropdown);
-        const select = this.unitContainer.querySelector('select');
-        select.selected = document.querySelector('option');
     }
 
     showValue(evt) {
