@@ -38,7 +38,7 @@
                 "baseball_pitches": {
                     "unit": ["m^2", "km^2", "ha"],
                     "size": "14864m^2",
-                    "icon": "baseball_field.jpg",
+                    "icon": "baseball-field.jpg",
                     "text": {
                         "japanese": "東京ドーム",
                         "description": "baseball pitch"

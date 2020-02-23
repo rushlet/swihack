@@ -28,6 +28,7 @@ form {
         border: 2px solid $color2;
         border-radius: 0.25rem;
         text-transform: capitalize;
+        margin: 1rem 0.5rem;
     }
 
     input[type="radio"]:checked+label {

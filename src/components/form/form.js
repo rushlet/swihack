@@ -37,7 +37,7 @@ export default class Form {
 
     updateUnitOptions(evt) {
         // populate unit options
-        // updat event listeners for units
+        // update event listeners for units
         console.log('target', evt.target.value);
         this.selectedType = evt.target.value;
         
@@ -50,7 +50,7 @@ export default class Form {
         });
         console.log('dropdown: ', this.dropdown);
         const select = this.unitContainer.querySelector('select');
-        this.unitContainer.querySelector('select').selected = document.querySelector('option');
+        select.selected = document.querySelector('option');
     }
 
     showValue(evt) {

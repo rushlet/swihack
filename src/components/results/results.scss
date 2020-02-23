@@ -1,12 +1,6 @@
 .results-container {
     margin: 2rem auto 4rem;
 
-    img {
-        width: 100%;
-        max-width: 250px;
-        object-fit: cover;
-    }
-
     h3 {
         margin-bottom: 2rem;
     }
@@ -19,10 +13,20 @@
     .examples-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     .example-container {
+        max-width: 300px;
+        margin: 2rem 0.5rem;
+        flex-grow: 1;
+
+        img {
+            width: 100%
+        }
+
         span {
             display: block;
             text-align: left;
