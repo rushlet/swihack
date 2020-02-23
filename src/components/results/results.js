@@ -58,7 +58,7 @@ export default class Results {
                 <div class="example-container">
                     <img src="./assets/img/${example.icon}" alt="${example.text}">
                     <span class="calculation">${options.value}${options.unit} is equal to ${this.calculateExampleByInput(options, example.size)} ${example.desc}</span>
-                    <span class="units">1 ${example.desc} = ${(options.value / this.calculateExampleByInput(options, example.size)).toFixed(2)}${options.unit}</span>
+                    <span class="units">1 ${example.desc} (${example.size}) = ${(options.value / this.calculateExampleByInput(options, example.size)).toFixed(3)}${options.unit}</span>
                     ${this.optionalDesc(language, example)}
                 </div>`;
         }, '');
@@ -66,7 +66,7 @@ export default class Results {
 
     optionalDesc(language, example) {
         if (language === 'all') return '';
-        return `<span class="description">${language}: ${example.text}</span>`;
+        return `<span class="description">${example.desc} in ${language}: ${example.text}</span>`;
     }
 
     calculateExampleByInput(opts, sizeOfExample) {
